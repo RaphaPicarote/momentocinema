@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.links {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  display: flex;
+}
+
+.links label {
+  padding: 10px 0;
+  flex-grow: 1;
+  cursor: pointer;
+  transition: all 0.4s;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.links label:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.scroll input {
+  display: none;
+}
+
+#destaque {
+  height: 100vh;
+  width: 100vw;
+}
+
+.sections {
+  transition: all 0.4s;
+  background-color: black;
+}
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+  background-color: black;
+}
+
+#sobre,
+#youtube,
+#podcast,
+.plataformas {
+  background-color: black;
+}
+
+.bloco {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  color: white;
+  align-items: center;
+}
+
+.bloco__descricao {
+  align-items: center;
+  margin: 0 10em;
+}
+
+.bloco__titulo {
+  font-family: "Kalam", cursive;
+  font-size: 4.8em;
+  margin-bottom: 0.1em;
+}
+
+.bloco__texto {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5em;
+}
+
+.bloco__img {
+  width: 45em;
+}
+
+.bloco__img--youtube {
+  margin-left: 10em;
+}
+
+#rd_sobre:checked ~ .sections {
+  margin-top: -100vh;
+}
+
+#rd_youtube:checked ~ .sections {
+  margin-top: -200vh;
+}
+
+#rd_Podcast:checked ~ .sections {
+  margin-top: -300vh;
+}
+
+.plataformas {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.plataforma__texto {
+  font-size: 4em;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 1.5em;
+}
+
+.link__plataformas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.plataforma__icon {
+  width: 10em;
+  padding: 0.5em;
+}
+
+.link__plataformas p {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+.rodape {
+  color: white;
+  padding: 5em;
+  background: linear-gradient(black, gray);
+  text-align: center;
+}
+
+.rodape h4 {
+  font-size: 2em;
+}
+
+.rodape__rede--social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1em;
+}
+
+.rodape__rede--social--logo {
+  width: 4em;
+  padding: 1em 0;
+}
+
+.copyright {
+  font-size: 2em;
+  padding: 1em 0;
+}

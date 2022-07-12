@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Momento Cinema</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <nav class="links">
       <label for="rd_home">Home</label>
@@ -32,7 +33,7 @@
       <input type="radio" name="grupo" id="rd_Podcast" />
       <input type="radio" name="grupo" id="rd_contato" />
 
-      <img src="teste02 - Copia2.png" alt="" id="destaque" />
+      <img src="img/teste02 - Copia2.png" alt="" id="destaque" />
 
       <section class="sections">
         <section class="bloco" id="sobre">
@@ -45,11 +46,11 @@
               perspiciatis culpa expedita commodi?
             </p>
           </div>
-          <img src="poça__5.png" alt="" />
+          <img src="img/poça__5.png" alt="" />
         </section>
 
         <section class="bloco" id="youtube">
-          <img src="youtube_site-remove.png" alt="" class="bloco__img" />
+          <img src="img/youtube_site-remove.png" alt="" class="bloco__img bloco__img--youtube" />
           <div class="bloco__descricao">
             <h3 class="bloco__titulo">Youtube</h3>
             <p class="bloco__texto">
@@ -71,7 +72,7 @@
               maxime. Necessitatibus!
             </p>
           </div>
-          <img src="teste-podcast.png" alt="" class="bloco__img" />
+          <img src="img/teste-podcast.png" alt="" class="bloco__img" />
         </section>
 
         <section class="plataformas">
@@ -82,15 +83,15 @@
             <li>
               <a
                 href="https://podcasts.apple.com/br/podcast/momento-cinema/id1456297712"
-              >
-                <img src="podcast-apple.png" alt="" class="plataforma__icon" />
+              target="_blank">
+                <img src="img/podcast-apple.png" alt="" class="plataforma__icon" />
               </a>
               <p>Apple Podcasts</p>
             </li>
             <li>
-              <a href="https://open.spotify.com/show/5R0e0H1ABL2mcn4uxfhm4s">
+              <a href="https://open.spotify.com/show/5R0e0H1ABL2mcn4uxfhm4s" target="_blank">
                 <img
-                  src="podcast-spotify.png"
+                  src="img/podcast-spotify.png"
                   alt=""
                   class="plataforma__icon"
                 />
@@ -100,7 +101,7 @@
             <li>
               <a
                 href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy85YmNmODY0L3BvZGNhc3QvcnNz"
-                ><img src="podcast-google.png" alt="" class="plataforma__icon"
+                target="_blank"><img src="img/podcast-google.png" alt="" class="plataforma__icon"
               /></a>
               <p>Podcast Google</p>
             </li>
@@ -111,7 +112,17 @@
 
     <footer class="rodape">
       <h4>Rede social do Momento Cinema</h4>
-      <p>copyright</p>
+      <ul class="rodape__rede--social">
+        <li>
+          <a href="https://www.facebook.com/momentocinemafabiog/community/" target="_black">
+            <img src="img/facebook.png" alt="Link para facebook Momento Cinema" class="rodape__rede--social--logo"></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/momentocinemafg/?igshid=YmMyMTA2M2Y=" target="_blank">
+          <img src="img/instagram.png" alt="Link para instagram Momento Cinema" class="rodape__rede--social--logo"></a>
+        </li>
+      </ul>
+      <p class="copyright"> &#169 Momento Cinema 2022</p>
     </footer>
   </body>
 </html>
